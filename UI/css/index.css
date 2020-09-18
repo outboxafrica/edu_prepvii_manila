@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+
+/* html,body {
+    margin:0;
+    padding:0;
+}  */
+
+body{
+    background: #f2f2f2;
+}
+
+/* grid area setup*/
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 2fr 1fr 3fr 0.3;
+    grid-template-areas: 
+                    "nav nav nav nav nav"
+                    "slider slider slider slider sbar"
+                    "cat cat cat cat sbar"
+                    "trend trend trend trend sbar"
+                    "foot foot foot foot foot";
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.slides img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.categories img, .trending img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+    /* width:  100px;
+    height: 100px; */
+    object-fit: cover;
+}
+
+
+
+/* Navigation Bar*/
+
+.navbar {
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+nav { 
+    background: #362c36;
+}
+
+nav::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+    
+}
+
+nav .logo img{
+    height: 7vh;
+    width: 9vh;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li{
+    /* float: left; */
+    display: inline-block;
+    background: #362c36;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    /* height: 40px; */
+}
+
+nav ul li a:hover{
+    /* color: cyan; 
+    border-radius: 2 px;
+    box-shadow:  0 0 5px #f7f6f0,
+                 0 0 10px #a7cbd5;*/
+    font-size: 19px;
+    font-weight: 100;
+}
+
+nav ul ul li a:hover{
+    box-shadow: none;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid #64965a;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul ul ul{
+    border-top: none;
+    opacity: 0;
+
+}
+
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 250px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+  
+nav ul ul li a{
+    line-height: 50px;
+}
+
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 250px;
+}
+
+nav ul ul li a img {
+    visibility: hidden;
+}
+
+/* nav div .search {
+    float: right;
+}
+
+nav input[type=search] {
+    /* padding: 6px;
+    margin-top: 8px; 
+    font-size: 17px;
+    border: none;
+}
+*/
+nav .search__button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    size: 60px;
+    width: 100%;
+}
+
+.show, input {
+    display: none;
+}
+
+label img {
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+}
+
+.search__button img {
+    margin: auto;
+    margin-top: 5px;
+    align-content: center;
+}
+
+.search__input {
+    display: none;
+}
+
+.search__input input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+
+@media all and (max-width: 968px) {
+    nav ul{
+        margin-right: 0px;
+        float: left;
+    }
+    nav .logo{
+        padding-left: 30px;
+        width: 100%;
+    }
+    .show + a, ul{
+        display: none;
+    }
+    nav ul li,nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    nav ul li a:hover{
+        box-shadow: none;
+    }
+    label img {
+        visibility: visible;
+        width: 30px;
+        height: 30px;
+    }
+    .show{
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    /* .show:hover{
+        /* color: cyan; 
+    } */
+    .icon{
+        display: block;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 40px;
+        line-height: 70px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    nav ul ul{
+        top: 70px;
+        border-top: 0px;
+        float: none;
+        position: static;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav ul ul a{
+        padding-left: 40px;
+    }
+    nav ul ul ul a{
+        padding-left: 80px;
+    }
+    nav ul ul ul li{
+        position: static;
+    }
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+    nav ul ul li{
+        border-bottom: 0px;
+    }
+    span.cancel:before{
+        content: '\f00d';
+    }
+}
+
+
+
+/* 
+
+        Body 
+
+*/
+
+
+/* Image slider */
+ 
+/* .slider {
+    grid-area: slider;
+    position: relative;
+    margin-top: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+} 
+
+.slider__list {
+    position: absolute;
+    left: 0;
+    width: 162.5rem;
+}
+  
+.slider__slide {
+    float: left;
+} */
+
+
+
+
+/* image slide controls */
+
+/* .slider__control {
+    margin-right: auto;
+    margin-left: auto;
+    width: 4.5rem;
+    font-family: sans-serif;
+  }
+  
+  .slider__control label {
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 4.5rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: transparent;
+    background: #ddd;
+    border-radius: 2rem;
+    cursor: pointer;
+    -webkit-transition: left 0.15s ease-out;
+    transition: left 0.15s ease-out;
+  }
+  
+  .slider__control label:before {
+    content: "autoplay";
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+    color: #333;
+   font-size: .95rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .slider__control label:after {
+    content: "";
+    position: absolute;
+   top: .25rem;
+   left: .25rem;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+    background: #fff;
+    -webkit-transition: left 0.15s ease-out;
+    transition: left 0.15s ease-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .slider__switch:checked + .slider > .slider__list {
+    -webkit-animation-name: autoplay;
+    animation-name: autoplay;
+    /*This will change the time it takes to move to next slide
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  
+  .slider__switch:checked + .slider + .slider__control > label { background: #455a64; }
+  
+  .slider__switch:checked + .slider + .slider__control > label:after { left: 2.75rem; } */
+
+
+
+
+
+.categories {
+    grid-area: cat;
+}
+
+.trending {
+    grid-area: trend;
+    margin: auto;
+}
+
+.sidebar {
+    grid-area: sbar;
+}
+
+/* .categories__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-template-rows: repeat(auto-fit, 10rem);
+    justify-content: center;
+} */
+
+.slider__slide img {
+    width: 100vw;
+}
+
+.categories__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+div .categories__catalog {
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+
+}
+.categories__category {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+
+    display: flex;
+}
+
+.categories__image {
+    width:100%;
+}
+.trending__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    grid-template-rows: repeat(auto-fit, 24rem);
+    justify-content: center;
+}
+
+article img {
+    white-space:nowrap
+}
+
+
+/* Footer */
+
+.footer{
+    grid-area: foot;
+}
+
+
+
+
+
+
+
+
