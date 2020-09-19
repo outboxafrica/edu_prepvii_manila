@@ -4,281 +4,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
     <title>Edu Online Shop</title>
 </head>
 
 <body>
     <!-- Start of Header Section - Contains Navigation Links-->
-    <header>
-        <div>
-            <!--Nav-Left-->
+    <header class="navbar">
+        <nav>
             <!--Logo-->
-            <a href="index.html"> <img src="images/logo.png" width="100" height="60" alt="Logo"></a>
-            
+            <div class="logo">
+                <a href="index.html">
+                    <!-- <img src="images/logo.png"  alt="Logo"> -->
+                    <h4>The Shop</h4>
+                </a>
+            </div>
+            <label for="btn" class="icon">
+                <span class="menu__bars"><img src="/UI/icons/iconmonstr-menu-5.svg"></span>
+            </label>
+            <input type="checkbox" id="btn">
             <!--Start of Navigation-Links-->
-            <nav>
-                <ul>
-                    <li>
-                        <!--Stat of Catalog Link
-                                                                                                                Catalog Link - Should return a drop-down menu showing links to different categories and subcategories of products available on our site. 
-                                                                                                                Menu items are listed below-->
-                        <a href="catalog.html">Catalog</a>
-                        <div>
+            <ul>
+                <li>
+                    <label for="btn-1" class="show">About</label>
+                    <a href="about.html">About</a>
+                    <input type="checkbox" id="btn-1">
+                </li>
+                <li>
+                    <!-- <label>Catalogue</label>   -->
+                    <label for="btn-2" class="show">Catalogue ></label>
+                    <a href="catalog.html">Catalog</a>
+                    <input type="checkbox" id="btn-2">
+                    <ul>
+                        <li>
+                            <label for="btn-3" class="show">Phones &amp; Tablets ></label>
+                            <a href="category.html">
+                                <!-- <img src="images/phones.svg" alt="Phones &amp; Tablets"> -->
+                                Phones &amp; Tablets
+                            </a>
+                            <input type="checkbox" id="btn-3">
+                            <ul>
+                                <li><a href="subcategory.html">Phones</a></li>
+                                <li><a href="subcategory.html">Tablets</a></li>
+                                <li><a href="subcategory.html">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-4" class="show">Home &amp; Office ></label>
+                            <a href="category.html">
+                                <!-- <img src="images/home & office.jpg" alt="Home &amp; Office"> -->
+                                Home &amp; Office
+                            </a>
+                            <input type="checkbox" id="btn-4">
+                            <ul>
+                                <li><a href="subcategory.html">Home</a></li>
+                                <li><a href="subcategory.html">Office</a></li>
+                                <li><a href="subcategory.html">Other Utilities</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-5" class="show">Health &amp; Beauty ></label>
+                            <a href="category.html">
+                                <!-- <img src="images/health & beauty.png" alt="Health &amp; Beauty"> -->
+                                Health &amp; Beauty
+                            </a>
+                            <input type="checkbox" id="btn-5">
                             <ul>
                                 <li>
-                                    <div>
-                                        <a href="category.html">
-                                            <img src="images/phones.svg" alt="Phones &amp; Tablets" width="80" height="80">
-                                            <div>Phones &amp;Tablets</div>
-                                        </a>
-                                        <ul>
-                                            <li><a href="subcategory.html">Phones</a></li>
-                                            <li><a href="subcategory.html">Tablets</a></li>
-                                            <li><a href="subcategory.html">Accessories</a></li>
-                                        </ul>
-                                    </div>
+                                    <a href="subcategory.html">Health</a>
                                 </li>
                                 <li>
-                                    <div>
-                                        <a href="category.html">
-                                            <img src="images/home & office.jpg" alt="Home &amp; Office" width="80" height="80">
-                                            <div>Home &amp;Office</div>
-                                        </a>
-                                        <ul>
-                                            <li><a href="subcategory.html">Home</a></li>
-                                            <li><a href="subcategory.html">Office</a></li>
-                                            <li><a href="subcategory.html">Other Utilities</a></li>
-                                        </ul>
-                                    </div>
+                                    <a href="subcategory.html">Beauty</a>
                                 </li>
                                 <li>
-                                    <div>
-                                        <a href="category.html">
-                                            <img src="images/health & beauty.png" alt="Health &amp; Beauty" width="80" height="80">
-                                            <div>Health &amp;Beauty</div>
-                                        </a>
-                                        <ul>
-                                            <li>
-                                                <a href="subcategory.html">Health</a>
-                                            </li>
-                                            <li>
-                                                <a href="subcategory.html">Beauty</a>
-                                            </li>
-                                            <li>
-                                                <a href="subcategory.html">Saloon</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <a href="category.html">
-                                            <img src="images/games.svg" alt="Games &amp; Entertainment" width="80" height="80" >
-                                            <div>Games &amp;Entertainment</div>
-                                        </a>
-                                        <ul>
-                                            <li>
-                                                <a href="subcategory.html">Gaming consoles</a>
-                                            </li>
-                                            <li>
-                                                <a href="subcategory.html">Games</a>
-                                            </li>
-                                            <li>
-                                                <a href="subcategory.html">Software</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <a href="category.html">
-                                            <img src="images/photo.svg" alt="Photo" width="80" height="80" > 
-                                            <div>Photo</div>
-                                        </a>
-                                        <ul>
-                                            <li><a href="subcategory.html">Cameras</a></li>
-                                            <li><a href="subcategory.html">Lenses</a></li>
-                                            <li><a href="subcategory.html">Accessories</a></li>
-                                        </ul>
-                                    </div>
+                                    <a href="subcategory.html">Saloon</a>
                                 </li>
                             </ul>
-                        </div>
-                        <!--End of Catalog Link-->
-                    </li>
-
-
-                    <li>
-                        <!--Stat of Pages Link
-                                                                                                        Pages Link - Should return a drop-down menu showing links to different pages on the website
-                                                                                                        Page Items are listed below-->
-                        <a href="#">
-                            Pages
-                        </a>
-                        <div>
-                            <div>
-                                <ul>
-                                    <li><a href="catalog.html">Catalog</a></li>
-                                    <li><a href="category.html">Category</a></li>
-                                    <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="account.html">Account</a></li>
-                                    <li><a href="favorites.html">Favorites</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--End of Pages Link-->
-                    </li>
-
-                        <!--Other Nav-Left Components-->
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-
-                    <li>
-                        <a href="contacts.html">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-            <!--End of Nav-Left-->
-        </div>
-
-        <div>
-            <!--Nav-Right-->
-            <!--Start of Search Feature
-                                                    Icon - When clicked returns a drop-down with a search input form-->
-            <a href="#"> </a>
-            <div>
-                <form>
-                    <input type="search" placeholder="Search…" autofocus>
-                </form>
-            </div>
-            <!--End of Search Feature-->
-
-            <!--Start of User Feature
-                                                    Icon - When clicked returns a drop-down menu with links to check out orders, favourite items, sign-up and sign-in pages-->
-            <a href="account.html"></a>
-            <div>
-                <ul>
-                    <li><a href="account.html">Orders</a></li>
-                    <li><a href="favorites.html">Favorites</a></li>
-                    <li><a href="signin.html">Sign-in</a></li>
-                    <li><a href="signout.html">Sign-out</a></li>
-                    <li><a href="signup.html">Sign-up</a></li>
-                </ul>
-            </div>
-            <!--End of User Feature-->
-
-            <!--Start of Cart Feature
-                                                    Icon - Whe clicked returns a side menu showing items in cart, and details.
-                                                    Cart side menu content included in Footer-->
-            <a href="cart.html"> Cart</a>
-        </div>
-        <!--End of Nav-Right-->
+                        </li>
+                        <li>
+                            <label for="btn-6" class="show">Games &amp; Entertainment ></label>
+                            <a href="category.html">
+                                <!-- <img src="images/games.svg" alt="Games &amp;  Entertainment"> -->
+                                Games &amp; Entertainment
+                            </a>
+                            <input type="checkbox" id="btn-6">
+                            <ul>
+                                <li>
+                                    <a href="subcategory.html">Gaming consoles</a>
+                                </li>
+                                <li>
+                                    <a href="subcategory.html">Games</a>
+                                </li>
+                                <li>
+                                    <a href="subcategory.html">Software</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label for="btn-7" class="show">Photography ></label>
+                            <a href="category.html">
+                                <!-- <img src="images/photo.svg" alt="Photo">  -->
+                                Photography
+                            </a>
+                            <input type="checkbox" id="btn-7">
+                            <ul>
+                                <li><a href="subcategory.html">Cameras</a></li>
+                                <li><a href="subcategory.html">Lenses</a></li>
+                                <li><a href="subcategory.html">Accessories</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- <label>Pages</label> -->
+                    <label for="btn-8" class="show">Pages ></label>
+                    <a href="#">Pages</a>
+                    <input type="checkbox" id="btn-8">
+                    <ul>
+                        <li><a href="catalog.html">Catalog</a></li>
+                        <li><a href="category.html">Category</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="favorites.html">Favorites</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+                <li>
+                    <label for="btn-9" class="show">Account ></label>
+                    <a href="account.html">Account </a>
+                    <input type="checkbox" id="btn-9">
+                    <ul>
+                        <li><a href="account.html">Orders</a></li>
+                        <li><a href="favorites.html">Favorites</a></li>
+                        <li><a href="signin.html">Sign-in</a></li>
+                        <li><a href="signout.html">Sign-out</a></li>
+                        <li><a href="signup.html">Sign-up</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="cart.html">Cart</a>
+                </li>
+                <li>
+                    <label for="btn-10" class="show">
+                        <input class="search__input" id="btn-10" type="text" placeholder="Search…" autofocus>
+                    </label>
+                </li>
+            </ul>
+        </nav>
     </header>
         <!--End of Header Section-->
     
 
-        <!--Start of Main Section-->
+        <!--Start of Main Section-->   
     <main>
         <!--Start of Slide-Show
                                         Shows atleast 3 images of the range of products in our online shop-->
-        <section>
-            <ul>
-                <li>
+        <section class="slider">
+            <div class="slider__container">
+                <div class="slider__slide slider--fade">
                     <a href="#">
-                        <figure>
-                            <img src="images/macbook-new.jpg" alt="New Macbook" width="1200" height="600" >
-                        </figure>
+                        <img src="images/macbook-new.jpg" alt="New Macbook">
+                        <div class="slider__text">Caption Text</div>
                     </a>
-                </li>
-                <li>
+                </div>
+                <div class="slider__slide slider--fade">
                     <a href="#">
-                        <figure>
-                            <img src="images/bags.jpg" alt="Smartphones" width="1200" height="600" >
-                        </figure>
+                        <img src="images/rsz_bags.jpg" alt="Smartphones">
+                        <div class="slider__text">Caption Text</div>
                     </a>
-                </li>
-                <li>
+                </div>
+                <div class="slider__slide slider--fade">
                     <a href="#">
-                        <figure>
-                            <img src="images/iphone.jpg" alt="Smartphones" width="1200" height="600" >
-                        </figure>
+                        <img src="images/iphone.jpg" alt="Smartphones">
+                        <div class="slider__text">Caption Text</div>
                     </a>
-                </li>
-            </ul>
-            <a>Previous</a>
-            <a>Next</a>
+
+                </div>
+                <a class="button__prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="button__next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="slider__control">
+                <span class="slider__dot" onclick="currentSlide(1)"></span>
+                <span class="slider__dot" onclick="currentSlide(2)"></span>
+                <span class="slider__dot" onclick="currentSlide(3)"></span>
+            </div>
+            <!-- <a>Previous</a>
+            <a>Next</a> -->
         </section>
         <!--End of Slide-Show-->
 
         <!--Start of Product Categories
                             Shows a few Categories & Subcategories of Products on our website, with a 'see all categories' button at the end-->
-        <section>
+        <section class="categories">
+            <h2>Categories</h2>
             <div>
-                <div>
-                    <div>
+                <div class="categories__wrapper">
+                    <div class="categories__category">
                         <a href="subcategory.html">
-                            <div>
-                                <div>
-                                    <figure>
-                                        <img src="images/smartphones.png" alt="Phones">
-                                    </figure>
-                                </div>
+                            <div class="categories__image">
+                                <figure>
+                                    <img src="images/smartphones.png" alt="Phones">
+                                </figure>
                             </div>
-                            <div>
-                                <div>Phones</div>
-                                <div>from UGX 100,000/=</div>
+                            <div class="categories__name1">
+                                <p>Phones</p>
+                                <p>from UGX 100,000/=</p>
                             </div>
                         </a>
                     </div>
-                    <div>
+                    <div class="categories__category">
                         <a href="subcategory.html">
-                            <div>
-                                <div>
-                                    <figure>
-                                        <img src="images/beauty.png" alt="Beauty">
-                                    </figure>
-                                </div>
+                            <div class="categories__image">
+                                <figure>
+                                    <img src="images/beauty.png" alt="Beauty">
+                                </figure>
                             </div>
-                            <div>
+                            <div class="categories__name2">
                                 <div>Beauty</div>
-                                <div>from UGX 50,0000/=</div>
+                                <div>from UGX 50,000/=</div>
                             </div>
                         </a>
                     </div>
-                    <div>
+                    <div class="categories__category">
                         <a href="subcategory.html">
-                            <div>
-                                <div>
-                                    <figure>
-                                        <img src="images/tablets.png" alt="Tablets">
-                                    </figure>
-                                </div>
+                            <div class="categories__image">
+                                <figure>
+                                    <img src="images/tablets.png" alt="Tablets">
+                                </figure>
                             </div>
-                            <div>
+                            <div class="categories__name3">
                                 <div>Tablets</div>
                                 <div>from UGX 500,000/=</div>
                             </div>
                         </a>
                     </div>
-                    <div>
+                    <div class="categories__category">
                         <a href="subcategory.html">
-                            <div>
-                                <div>
-                                    <figure>
-                                        <img src="images/consoles.png" alt="Gaming Consoles">
-                                    </figure>
-                                </div>
+                            <div class="categories__image">
+                                <figure>
+                                    <img src="images/consoles.png" alt="Gaming Consoles">
+                                </figure>
                             </div>
-                            <div>
+                            <div class="categories__name4">
                                 <div>Gaming Consoles</div>
                                 <div>from UGX 500,000/=</div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div>
+                <div class="categories__catalog">
                     <a href="catalog.html">
                         <span>see all categories</span>
                     </a>
@@ -289,421 +266,225 @@
 
         <!--Start of Trending Items - 
                             Section presents a list of items that the user can scroll through, like, comment, add to cart and any other available features-->
-        <section>
+        <section class="trending">
+            <h2>Trending Items</h2>
             <div>
-                <h2>Trending Items</h2>
-                <div>
-                    <div>
-                        <article>
-                            <div>
-                                <div>
-                                    <a href="product.html">
-                                        <div>
-                                            <span>top selling</span>
-                                            <span>trade-in</span>
-                                        </div>
-                                        <figure>
-                                            <img src="images/1-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                                        </figure>
-                                    </a>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>Laptop</div>
-                                    <h3>
-                                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                            (Silver)</a>
-                                    </h3>
-                                <div>
-                                    <div>
-                                        <div>UGX 2,000,000/=</div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <a title="Add to favorites"></a>
-                                            <span>Add to favorites</span>
-                                            </a>
-                                        </div>
-                                        <button>
-                                            <span>add to cart</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <div>
-                                    <a href="product.html">
-                                        <div>
-                                            <span>top selling</span>
-                                            <span>trade-in</span>
-                                        </div>
-                                        <figure>
-                                            <img src="images/2-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                                        </figure>
-                                    </a>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>Laptop</div>
-                                    <h3>
-                                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                            (Silver)</a>
-                                    </h3>
-                                <div>
-                                    <div>
-                                        <div>UGX 2,000,000/=</div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <a title="Add to favorites"></a>
-                                            <span>Add to favorites</span>
-                                            </a>
-                                        </div>
-                                        <button>
-                                            <span>add to cart</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <div>
-                                    <a href="product.html">
-                                        <div>
-                                            <span>top selling</span>
-                                            <span>trade-in</span>
-                                        </div>
-                                        <figure>
-                                            <img src="images/3-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                                        </figure>
-                                    </a>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>Laptop</div>
-                                    <h3>
-                                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                            (Silver)</a>
-                                    </h3>
-                                <div>
-                                    <div>
-                                        <div>UGX 2,000,000/=</div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <a title="Add to favorites"></a>
-                                            <span>Add to favorites</span>
-                                            </a>
-                                        </div>
-                                        <button>
-                                            <span>add to cart</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <div>
-                                    <a href="product.html">
-                                        <div>
-                                            <span>top selling</span>
-                                            <span>trade-in</span>
-                                        </div>
-                                        <figure>
-                                            <img src="images/4-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                                        </figure>
-                                    </a>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>Laptop</div>
-                                    <h3>
-                                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                            (Silver)</a>
-                                    </h3>
-                                <div>
-                                    <div>
-                                        <div>UGX 2,000,000/=</div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <a title="Add to favorites"></a>
-                                            <span>Add to favorites</span>
-                                            </a>
-                                        </div>
-                                        <button>
-                                            <span>add to cart</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <div>
-                                    <a href="product.html">
-                                        <div>
-                                            <span>top selling</span>
-                                            <span>trade-in</span>
-                                        </div>
-                                        <figure>
-                                            <img src="images/5-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                                        </figure>
-                                    </a>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>Laptop</div>
-                                    <h3>
-                                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                            (Silver)</a>
-                                    </h3>
-                                <div>
-                                    <div>
-                                        <div>UGX 2,000,000/=</div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <a title="Add to favorites"></a>
-                                            <span>Add to favorites</span>
-                                            </a>
-                                        </div>
-                                        <button>
-                                            <span>add to cart</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <div>
-                                    <a href="product.html">
-                                        <div>
-                                            <span>top selling</span>
-                                            <span>trade-in</span>
-                                        </div>
-                                        <figure>
-                                            <img src="images/6-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                                        </figure>
-                                    </a>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>Laptop</div>
-                                    <h3>
-                                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                            (Silver)</a>
-                                    </h3>
-                                <div>
-                                    <div>
-                                        <div>UGX 2,000,000/=</div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <a title="Add to favorites"></a>
-                                            <span>Add to favorites</span>
-                                            </a>
-                                        </div>
-                                        <button>
-                                            <span>add to cart</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <div>
-                                    <a href="product.html">
-                                        <div>
-                                            <span>top selling</span>
-                                            <span>trade-in</span>
-                                        </div>
-                                        <figure>
-                                            <img src="images/7-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                                        </figure>
-                                    </a>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>Laptop</div>
-                                    <h3>
-                                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                            (Silver)</a>
-                                    </h3>
-                                <div>
-                                    <div>
-                                        <div>UGX 2,000,000/=</div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <a title="Add to favorites"></a>
-                                            <span>Add to favorites</span>
-                                            </a>
-                                        </div>
-                                        <button>
-                                            <span>add to cart</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div>
-                                <div>
-                                    <a href="product.html">
-                                        <div>
-                                            <span>top selling</span>
-                                            <span>trade-in</span>
-                                        </div>
-                                        <figure>
-                                            <img src="images/8-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                                        </figure>
-                                    </a>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>Laptop</div>
-                                    <h3>
-                                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                            (Silver)</a>
-                                    </h3>
-                                <div>
-                                    <div>
-                                        <div>UGX 2,000,000/=</div>
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <a title="Add to favorites"></a>
-                                            <span>Add to favorites</span>
-                                            </a>
-                                        </div>
-                                        <button>
-                                            <span>add to cart</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        
-
+                <div class="trending__links">
+                    <span></span>
+                    <span>top selling</span>
+                    <span>trade-in</span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="trending__wrapper">
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/1-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot; Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
+                        <button>
+                            <span>add to cart</span>
+                        </button>
                     </div>
                 </div>
-                <div>
-                    <a href="subcategory.html">
-                        <span>shop all</span>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/2-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
                     </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot; Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
+                        <button>
+                            <span>add to cart</span>
+                        </button>
+                    </div>
                 </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/3-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
+                            (Silver)
+                        </a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
+                        <button>
+                            <span>add to cart</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/4-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
+                        <button>
+                            <span>add to cart</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/5-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
+                        <button>
+                            <span>add to cart</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/6-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
+                        <button>
+                            <span>add to cart</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/7-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
+                        <button>
+                            <span>add to cart</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/8-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
+                        <button>
+                            <span>add to cart</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="trending__catalog__link">
+                <a href="subcategory.html">
+                    <span>shop all</span>
+                </a>
             </div>
         </section>
         <!--End of Trending Items-->
+        <!-- Start of cart -->
+        <div class="sidebar">
+            <div class="cart">
+                <header>
+                    <div>
+                        <div>Cart</div>
+                    </div>
+                </header>
+                <div>
+                    <ul>
+                        <li>
+                            <h4>Empty</h4>
+                        </li>  
+                    </ul>
+                </div>
+                <footer>
+                    <div>Subtotal</div>
+                    <div>UGX 4,000,000/=</div>
+                    <div>
+                        <a href="cart.html">view cart</a>
+                    </div>
+                    <div>
+                        <a href="checkout.html">checkout</a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- end of cart-->
     </main>
         <!--End of Main Section-->
 
         <!--Start of Footer Section-->
-    <footer>
-        <!--Start of Cart 
-                Should show up as a side menu when user clicks on Cart icon in nav-bar. Can as well show app as a separate webpage-->
+    <footer class="footer">
         <div>
-            <aside>
-                <div>
-                    <header>
-                        <div>
-                            <div>Cart</div>
-                        </div>
-                    </header>
-                    <div>
-                        <ul>
-                            <li>
-                                <article>
-                                    <div>
-                                        <div>
-                                            <div>
-                                                <a href="product.html">
-                                                    <figure>
-                                                        <img src="images/1-medium.jpg"
-                                                            alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div>Laptop</div>
-                                            <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                                (Silver)</a>
-                                            <div>
-                                                <div>UGX 2,000,0000/=</div>
-                                                <div>1 × UGX 2,000,000/=</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <a href="#"></a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </li>
-                            <li>
-                                <arttcle>
-                                    <div>
-                                        <div>
-                                            <div>
-                                                <a href="product.html">
-                                                    <figure>
-                                                        <img src="images/3-medium.jpg"
-                                                            alt="Apple MacBook 12&quot; MNYN2LL/A 512GB (Rose Gold)">
-                                                    </figure>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div>Laptop</div>
-                                            <a href="product.html">Apple MacBook 12 &quot;MNYN2LL/A 512GB (Rose
-                                                Gold)</a>
-                                            <div>
-                                                <div>UGX 2,000,000/=</div>
-                                                <div>1 × UGX 2,000,000/=</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <a href="#"></a>
-                                        </div>
-                                    </div>
-                                </arttcle>
-                            </li>
-                        </ul>
-                    </div>
-                    <footer>
-                        <div>
-                            <div>Subtotal</div>
-                            <div>UGX 4,000,000/=</div>
-                        </div>
-                        <div>
-                            <div>
-                                <a href="cart.html">view cart</a>
-                            </div>
-                            <div>
-                                <a href="checkout.html">checkout</a>
-                            </div>
-                        </div>
-                    </footer>
-                </div>
-            </aside>
+            
         </div>
-        <!--End of Cart-->
+        <!-- Add copyright section -->
     </footer>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
