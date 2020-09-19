@@ -1,3 +1,9 @@
+//login page
+function js() {
+    alert("you are welcome to the online shoping")
+}
+//
+
 // SLIDESHOW CONTROLS
 
 var slideIndex = 1;
