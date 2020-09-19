@@ -20,7 +20,7 @@
                 </a>
             </div>
             <label for="btn" class="icon">
-                <span class="fa fa-bars"><img src="/UI/icons/bars-solid.svg"></span>
+                <span class="menu__bars"><img src="/UI/icons/iconmonstr-menu-5.svg"></span>
             </label>
             <input type="checkbox" id="btn">
             <!--Start of Navigation-Links-->
@@ -149,7 +149,7 @@
                 </li>
                 <li>
                     <label for="btn-10" class="show">
-                        <input class="search__input" type="checkbox" placeholder="Search…" autofocus>
+                        <input class="search__input" id="btn-10" type="text" placeholder="Search…" autofocus>
                     </label>
                 </li>
             </ul>
@@ -163,34 +163,33 @@
         <!--Start of Slide-Show
                                         Shows atleast 3 images of the range of products in our online shop-->
         <section class="slider">
-            <div>
-                <ul class="slider__list">
-                    <li class="slider__slide">
-                        <a href="#">
-                            <figure>
-                                <img src="images/macbook-new.jpg" alt="New Macbook">
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="slider__slide">
-                        <a href="#">
-                            <figure>
-                                <img src="images/bags.jpg" alt="Smartphones">
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="slider__slide">
-                        <a href="#">
-                            <figure>
-                                <img src="images/iphone.jpg" alt="Smartphones">
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
+            <div class="slider__container">
+                <div class="slider__slide slider--fade">
+                    <a href="#">
+                        <img src="images/macbook-new.jpg" alt="New Macbook">
+                        <div class="slider__text">Caption Text</div>
+                    </a>
+                </div>
+                <div class="slider__slide slider--fade">
+                    <a href="#">
+                        <img src="images/rsz_bags.jpg" alt="Smartphones">
+                        <div class="slider__text">Caption Text</div>
+                    </a>
+                </div>
+                <div class="slider__slide slider--fade">
+                    <a href="#">
+                        <img src="images/iphone.jpg" alt="Smartphones">
+                        <div class="slider__text">Caption Text</div>
+                    </a>
+
+                </div>
+                <a class="button__prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="button__next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <input id="sliderSwitch" class="slider__switch" type="checkbox" name="sliderSwitch" hidden />
             <div class="slider__control">
-                <label for="sliderSwitch"></label>
+                <span class="slider__dot" onclick="currentSlide(1)"></span>
+                <span class="slider__dot" onclick="currentSlide(2)"></span>
+                <span class="slider__dot" onclick="currentSlide(3)"></span>
             </div>
             <!-- <a>Previous</a>
             <a>Next</a> -->
@@ -200,6 +199,7 @@
         <!--Start of Product Categories
                             Shows a few Categories & Subcategories of Products on our website, with a 'see all categories' button at the end-->
         <section class="categories">
+            <h2>Categories</h2>
             <div>
                 <div class="categories__wrapper">
                     <div class="categories__category">
@@ -224,7 +224,7 @@
                             </div>
                             <div class="categories__name2">
                                 <div>Beauty</div>
-                                <div>from UGX 50,0000/=</div>
+                                <div>from UGX 50,000/=</div>
                             </div>
                         </a>
                     </div>
@@ -270,178 +270,174 @@
             <h2>Trending Items</h2>
             <div>
                 <div class="trending__links">
+                    <span></span>
                     <span>top selling</span>
                     <span>trade-in</span>
+                    <span></span>
                 </div>
             </div>
             <div class="trending__wrapper">
-                <article>
-                    <div>
-                        <a href="product.html">
-                            <figure>
-                                <img src="images/1-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                            </figure>
-                        </a>
-                        <h3>
-                            <a href="product.html">Apple MacBook Pro 15 &quot; Touch Bar MPTU2LL/A 256GB
-                                (Silver)</a>
-                        </h3>
-                        <p>UGX 2,000,000/=</p>
-                        <div class="product__buttons">
-                            <button>
-                                <span>Add to favorites</span>
-                            </button>
-                            <button>
-                                <span>add to cart</span>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <a href="product.html">
-                            <figure>
-                                <img src="images/2-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                            </figure>
-                        </a>
-                        <h3>
-                            <a href="product.html">Apple MacBook Pro 15 &quot; Touch Bar MPTU2LL/A 256GB
-                                (Silver)</a>
-                        </h3>
-                        <p>UGX 2,000,000/=</p>
-                        <div class="product__buttons">
-                            <button>
-                                <span>Add to favorites</span>
-                            </button>
-                            <button>
-                                <span>add to cart</span>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <a href="product.html">
-                            <figure>
-                                <img src="images/3-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                            </figure>
-                        </a>
-                        <h3>
-                            <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                (Silver)
-                            </a>
-                        </h3>
-                        <p>UGX 2,000,000/=</p>
-                        <div class="product__buttons">
-                            <button>
-                                <span>Add to favorites</span>
-                            </button>
-                            <button>
-                                <span>add to cart</span>
-                            </button>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <a href="product.html">
-                            <figure>
-                                <img src="images/4-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                            </figure>
-                        </a>
-                        <h3>
-                            <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                (Silver)</a>
-                        </h3>
-                        <p>UGX 2,000,000/=</p>
-                        <a title="Add to favorites"></a>
-                            <span>Add to favorites</span>
-                        </a>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/1-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot; Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
                         <button>
                             <span>add to cart</span>
                         </button>
                     </div>
-                </article>
-                <article>
-                    <div>
-                        <a href="product.html">
-                            <figure>
-                                <img src="images/5-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                            </figure>
-                        </a>
-                        <h3>
-                            <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                (Silver)</a>
-                        </h3>
-                        <p>UGX 2,000,000/=</p>
-                        <a title="Add to favorites"></a>
-                            <span>Add to favorites</span>
-                        </a>
+                </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/2-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot; Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
                         <button>
                             <span>add to cart</span>
                         </button>
                     </div>
-                </article>
-                <article>
-                    <div>
-                        <a href="product.html">
-                            <figure>
-                                <img src="images/6-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                            </figure>
+                </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/3-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
+                            (Silver)
                         </a>
-                        <h3>
-                            <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                (Silver)</a>
-                        </h3>
-                        <p>UGX 2,000,000/=</p>
-                        <a title="Add to favorites"></a>
-                            <span>Add to favorites</span>
-                        </a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
                         <button>
                             <span>add to cart</span>
                         </button>
                     </div>
-                </article>
-                <article>
-                    <div>
-                        <a href="product.html">
-                            <figure>
-                                <img src="images/7-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                            </figure>
-                        </a>
-                        <h3>
-                            <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                (Silver)</a>
-                        </h3>
-                        <p>UGX 2,000,000/=</p>
-                        <a title="Add to favorites"></a>
-                            <span>Add to favorites</span>
-                        </a>
+                </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/4-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
                         <button>
                             <span>add to cart</span>
                         </button>
                     </div>
-                </article>
-                <article>
-                    <div>
-                        <a href="product.html">
-                            <figure>
-                                <img src="images/8-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
-                            </figure>
-                        </a>
-                        <h3>
-                            <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
-                                (Silver)</a>
-                        </h3>
-                        <p>UGX 2,000,000/=</p>
-                        <a title="Add to favorites"></a>
-                            <span>Add to favorites</span>
-                        </a>
+                </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/5-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
                         <button>
                             <span>add to cart</span>
                         </button>
                     </div>
-                </article>
+                </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/6-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
+                        <button>
+                            <span>add to cart</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/7-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
+                        <button>
+                            <span>add to cart</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending__item">
+                    <a href="product.html">
+                        <figure>
+                            <img src="images/8-medium.jpg" alt="Apple MacBook Pro 15&quot; Touch Bar MPTU2LL/A 256GB (Silver)"/>
+                        </figure>
+                    </a>
+                    <h3>
+                        <a href="product.html">Apple MacBook Pro 15 &quot;Touch Bar MPTU2LL/A 256GB
+                            (Silver)</a>
+                    </h3>
+                    <p>UGX 2,000,000/=</p>
+                    <div class="product__buttons">
+                        <button>
+                            <span>add to favorites</span>
+                        </button>
+                        <button>
+                            <span>add to cart</span>
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="trending__catalog__link">
                 <a href="subcategory.html">
@@ -488,6 +484,7 @@
         </div>
         <!-- Add copyright section -->
     </footer>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
