@@ -544,7 +544,7 @@ div .categories__catalog {
     display: inline-block;
     border: none;
     text-decoration: none;
-    background-color: #e7e7e7;
+    background-color: yellowgreen;
     color: black;
     padding: 8px 16px;
     border-radius: 4px;
@@ -573,8 +573,13 @@ article img {
 
 .footer{
     grid-area: foot;
+    text-align: center;
 }
-
+h5{
+    text-align: center;
+    font-size: large;
+    color: blueviolet;
+}
 
 
 
