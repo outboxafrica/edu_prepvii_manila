@@ -1,85 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Sign Up</title>
-  <link rel="stylesheet" href="/UI/css/style.css">
-</html>
-
-<body>
-  <div class="container">
-    <!-- <div class="empty-box">
-    </div> -->
-    <div class="form-container">
-      <div class="form-wrapper">
-        <div class="signup-text">
-          <div class="logo">
-            <h2>MANILA SHOP</h2>
-          </div>
-          
-          <div class="title">
-            <h3>create an account</h3>
-          </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>SignUp</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Join Us! <br />Create Your Account Now!</h2>
+        <div class="form-control">
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            id="firstName"
+            placeholder="Enter your first name.."
+          />
+          <small>Error</small>
         </div>
-
-        <div class="form-card">
-          <form id="form" class="form">
-            <div class="form-control">
-              <label for="fname">first name</label>
-              <input type="text" placeholder="Enter First name"  id="fname" name="fname" />
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-
-            <div class="form-control">
-              <label for="lname">last name</label>
-              <input type="text" placeholder="Enter last name" id="lname" name="lname" />
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-            
-            <div class="form-control">
-              <label for="phone">number</label>
-              <input type="tel" placeholder="Enter phone number" id="phone" name="phone" required />
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-
-            <div class="form-control">
-              <label for="email">email</label>
-              <input type="email" placeholder="Enter email" id="email" name="email" required />
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-            
-            <div class="form-control">
-              <label for="username">username</label>
-              <input type="text" placeholder="Enter username" id="username" name="username" required />
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-            </div>  
-
-            <div class="form-control">
-              <label for="psw">password</label>
-              <input type="password" placeholder="Enter Password" name="psw" id="password" required />
-              <i class="fas fa-check-circle"></i>
-              <i class="fas fa-exclamation-circle"></i>
-            </div>
-
-            <div class="error__message"></div>
-          </form>
-          <!-- <input type="checkbox" checked="checked" name="remember"><p>
-            remember me
-          </p></input> -->
-          <input type="submit" class="button" id="signup" value="Submit" />
+        <div class="form-control">
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            id="lastName"
+            placeholder="Enter your last name.."
+          />
+          <small>Error</small>
         </div>
-      </div>
+        <div class="form-control">
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Enter your email.." />
+          <small>Error</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password.."
+          />
+          <small>Error</small>
+        </div>
+        <div class="form-control">
+          <label for="password2">Confirm Password:</label>
+          <input
+            type="text"
+            id="password2"
+            placeholder="Enter your password again.."
+          />
+          <small>Error</small>
+        </div>
+        <button><a href="index.html">SIGNUP</a></button>
+        <span>Already have an account? <a href="login.html">LogIn</a></span>
+      </form>
     </div>
-  </div>
 
-  <script src="../JS/signup.js"></script>
-</body>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
