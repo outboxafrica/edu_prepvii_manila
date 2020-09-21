@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customer login page</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+  <body>
+    <h2>Customer Login </h2><br>
+    <div class="login">
+      <form id="login" method="GET" action="login.php">
+          <hr>
+          <label><b> Name or Email
+          </b>
+        </label>
+          <input type="text" placeholder="Customer Name" id="name" name="name" required>
+          <br><br>
+
+          <label><b>Password
+          </b>
+          </label>
+          <input type="password" placeholder="Enter Password" name="word" id="word" required>
+           <br><br>
+          <input type="button" name="log" id="log" value="Login">
+            <br><br>
+            <input type="checkbox" id="check">
+            <span>Remember Me</span>
+            <br><br>
+      
+        <div class="container" style="background-color: mistyrose"; >
+          <span class="word">Don't Remember <a href="#">password?</a></span>
+        </div>
+        <hr>
+        <p>Do you Agree to<a href="#" color:darkblue >Terms and Conditions of service?</a></p>
+        <div class="radio"> <input type="radio" id="Yes" name="select" value="yes">
+        <label for="yes">Yes</label><br></div>
+        <P>Enjoy unlimited service with Edu online shopping</P>
+      </form>
+  </div>
+
+</body>
+</html>
