@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -7,16 +11,326 @@
 :root {
   --success-color: #a8df65;
   --error-color: #d32626;
+  
 }
 
 body {
   background-color: #f4f6ff;
   font-family: "Open Sans", sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0;
   min-height: 100vh;
+  color: white;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  margin-top: 0px;
+}
+h4 {
+  color: white;
+}
+
+.search-box {
+  position: relative;
+  /* top: 50%; */
+  background: white;
+  border-radius: 30px;
+  /* height: 70px; 
+  padding: 10px;*/
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+}
+
+.search-box:hover > .search-text {
+  width: 240px;
+  padding: 0 6px;
+  visibility: visible;
+}
+
+.search-text:hover {
+  cursor: text;
+}
+
+.search-btn {
+  background: #362c36;
+  /* background: white; */
+  /* float: left; */
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search-btn .fas {
+  color: white;
+}
+
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  float: right;
+  padding: 0;
+  color: black;
+  font-size: 16px;
+  transition: 0.2s;
+  line-height: 70px;
+  visibility: hidden;
+  display: none;
+  width: 0px;
+}
+ a {
+   text-decoration: none;
+ }
+/* .search-box input {
+  width: 180px;
+} */
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+  color: #f2f2f2;
+}
+
+.navbar {
+  /* grid-area: nav; */
+  border-radius: var(--main-radius);
+  /* height: 10vh; */
+  /* padding-top: var(--main-padding); */
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+
+nav {
+  background: #362c36;
+  color: white;
+  height: 60px;
+  border-top: 0;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+nav::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+nav .logo {
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 60px;
+  padding-left: 60px;
+
+}
+/* span {
+  font-size: 25px;
+} */
+
+h4 {
+  margin: 0;
+}
+
+nav .logo img {
+  height: 7vh;
+  width: 9vh;
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+  margin: 0px;
+}
+
+nav ul li {
+  /* float: left; */
+  display: inline-block;
+  background: #362c36;
+  color: white;
+  margin: 0 5px;
+  /* height: 60px;
+  margin-top: ; */
+}
+
+nav ul li a {
+  color: white;
+  line-height: 60px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  /* height: 40px; */
+}
+
+nav ul li a:hover {
+  /* color: cyan; 
+  border-radius: 2 px;
+  box-shadow:  0 0 5px #f7f6f0,
+               0 0 10px #a7cbd5;*/
+  /* font-size: 19px; */
+  font-weight: 100;
+}
+
+nav ul ul li a:hover {
+  box-shadow: none;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 60px;
+  border-top: 3px solid #64965a;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s;
+  padding-inline-start: 0px;
+}
+
+nav ul ul ul {
+  border-top: none;
+  opacity: 0;
+
+}
+
+nav ul li:hover > ul {
+  top: 60px;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul ul li {
+  position: relative;
+  margin: 0;
+  width: 220px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul ul li a {
+  line-height: 50px;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 250px;
+}
+
+nav ul ul li a img {
+  visibility: hidden;
+}
+
+.show,
+input[type=checkbox] {
+  display: none;
+}
+.icon {
+  visibility: hidden;
+}
+
+@media all and (max-width: 968px) {
+  nav {
+    width: 100%;
+  }
+  
+  nav ul {
+      margin-right: 0;
+      float: left;
+      width: 100%;
+      padding-inline-start: 0px;
+
+      /* display: flex;
+      align-items: center; */
+  }
+  nav .logo {
+      padding-left: 30px;
+      width: 100%;
+  }
+  .menu__bars img {
+      margin-top: 0;
+      margin-bottom: 10px;
+      padding: 0;
+      vertical-align: middle;
+      background: #f2f2f2;
+      border-radius: 50%;
+  }
+  .show + a,
+  ul {
+      display: none;
+  }
+  nav ul li,
+  nav ul ul li {
+      display: block;
+      width: 100%;
+  }
+  nav ul li a:hover {
+      box-shadow: none;
+  }
+  label img {
+      visibility: visible;
+      width: 30px;
+      height: 30px;
+  }
+  .show {
+      display: block;
+      color: white;
+      font-size: 18px;
+      padding: 0 20px;
+      line-height: 70px;
+      cursor: pointer;
+  }
+  /* .show:hover{
+      /* color: cyan; 
+  } */
+  .icon {
+      display: block;
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 40px;
+      line-height: 70px;
+      cursor: pointer;
+      font-size: 25px;
+      visibility: visible;
+  }
+  nav ul ul {
+      top: 70px;
+      border-top: 0;
+      float: none;
+      position: static;
+      display: none;
+      opacity: 1;
+      visibility: visible;
+  }
+  nav ul ul a {
+      padding-left: 40px;
+  }
+  nav ul ul ul a {
+      padding-left: 80px;
+  }
+  nav ul ul ul li {
+      position: static;
+  }
+  [id^=btn]:checked + ul {
+      display: block;
+  }
+  nav ul ul li {
+      border-bottom: 0;
+  }
+  span.cancel:before {
+      content: '\f00d';
+  }
 }
 
 h2 {
@@ -30,7 +344,10 @@ h2 {
   background-color: #f6f6f6;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  width: 500px;
+  /* width: 500px; */
+  max-width: 500px;
+  padding-inline-start: 0px;
+  padding-bottom: 30px;
 }
 
 .form {
@@ -84,9 +401,9 @@ h2 {
 }
 
 .form button {
-  background-color: #5fdde5;
+  background-color: #64965a;
   cursor: pointer;
-  border: 2px solid #5fdde5;
+  border: 2px solid #64965a;
   border-radius: 5px;
   width: 100%;
   display: block;
@@ -97,11 +414,14 @@ h2 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
+.form button a {
+  color: white;
+}
 span {
   color: #900c3f;
 }
 
-.form a {
+.form span a {
   text-decoration: none;
+  color: black;
 }
