@@ -131,6 +131,7 @@ nav .logo {
   font-weight: 600;
   line-height: 60px;
   padding-left: 60px;
+  cursor: pointer;
 
 }
 /* span {
@@ -399,8 +400,12 @@ h2 {
 .form-control.error small {
   visibility: visible;
 }
+.form input[type=button]:hover{
+   background-color: #f0b445;
+   border: 2px solid #c5ff69;
 
-.form button {
+}
+.form input[type=button] {
   background-color: #64965a;
   cursor: pointer;
   border: 2px solid #64965a;
@@ -414,7 +419,7 @@ h2 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.form button a {
+.form input[type=button] a {
   color: white;
 }
 span {

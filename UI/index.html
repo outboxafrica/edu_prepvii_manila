@@ -1,313 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="https://kit.fontawesome.com/f034b3503b.js" crossorigin="anonymous"></script>
-    <title>Edu Online Shop</title>
-</head>
-
-<body>
-    <!-- Start of Header Section - Contains Navigation Links-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Manila Shop |LogIn</title>
+  </head>
+  <body>
     <header class="navbar">
-        <nav>
-            <!--Logo-->
-            <div class="logo">
-                <a href="index.html">
-                    <!-- <img src="images/logo.png"  alt="Logo"> -->
-                    <h4>Manila Shop</h4>
-                </a>
-            </div>
-            <label for="btn" class="icon">
-                <span class="menu__bars"><img src="/UI/icons/iconmonstr-menu-5.svg"></span>
-            </label>
-            <input type="checkbox" id="btn">
-            <!--Start of Navigation-Links-->
-            <ul>
-                <li>
-                    <!-- <label>Catalogue</label>   -->
-                    <label for="btn-2" class="show">Catalog ></label>
-                    <a href="#">Catalog</a>
-                    <input type="checkbox" id="btn-2">
-                    <ul>
-                        <li>
-                            <label for="btn-3" class="show">Phones &amp; Tablets ></label>
-                            <a href="#">
-                                <!-- <img src="images/phones.svg" alt="Phones &amp; Tablets"> -->
-                                Phones &amp; Tablets
-                            </a>
-                            <input type="checkbox" id="btn-3">
-                            <ul>
-                                <li><a href="#">Phones</a></li>
-                                <li><a href="#">Tablets</a></li>
-                                <li><a href="#">Accessories</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <label for="btn-4" class="show">Home &amp; Office ></label>
-                            <a href="#">
-                                <!-- <img src="images/home & office.jpg" alt="Home &amp; Office"> -->
-                                Home &amp; Office
-                            </a>
-                            <input type="checkbox" id="btn-4">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Office</a></li>
-                                <li><a href="#">Other Utilities</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <label for="btn-5" class="show">Health &amp; Beauty ></label>
-                            <a href="#">
-                                <!-- <img src="images/health & beauty.png" alt="Health &amp; Beauty"> -->
-                                Health &amp; Beauty
-                            </a>
-                            <input type="checkbox" id="btn-5">
-                            <ul>
-                                <li>
-                                    <a href="#">Health</a>
-                                </li>
-                                <li>
-                                    <a href="#">Beauty</a>
-                                </li>
-                                <li>
-                                    <a href="#">Saloon</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <label for="btn-6" class="show">Games &amp; Entertainment ></label>
-                            <a href="#">
-                                <!-- <img src="images/games.svg" alt="Games &amp;  Entertainment"> -->
-                                Games &amp; Entertainment
-                            </a>
-                            <input type="checkbox" id="btn-6">
-                            <ul>
-                                <li>
-                                    <a href="#">Gaming consoles</a>
-                                </li>
-                                <li>
-                                    <a href="#">Games</a>
-                                </li>
-                                <li>
-                                    <a href="#">Software</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <label for="btn-7" class="show">Photography ></label>
-                            <a href="#">
-                                <!-- <img src="images/photo.svg" alt="Photo">  -->
-                                Photography
-                            </a>
-                            <input type="checkbox" id="btn-7">
-                            <ul>
-                                <li><a href="#">Cameras</a></li>
-                                <li><a href="#">Lenses</a></li>
-                                <li><a href="#">Accessories</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <label for="btn-9" class="show">Account ></label>
-                    <a href="#">Account </a>
-                    <input type="checkbox" id="btn-9">
-                    <ul>
-                        <li><a href="signup.html">Create account</a></li>
-                        <li><a href="login.html">Log-in</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <!-- <span id="search-icon" class="nav-icon"><i class="fas fa-search" onclick=""></i></span> -->
-                    <!-- <label for="btn-10" class="show"></label> -->
-                    <div class="search-box">
-                        <input class="search-text" type="text" name="search" placeholder="search.." />
-                        <a class="search-btn" href="#">
-                            <i class="fas fa-search" onclick=""></i>
-                        </a>
-                    </div>
-                    <!-- <input type="checkbox" id="btn-10"> -->
-                </li>
-                <li>
-                    <div class='cart-btn'>
-                        <span class="nav-icon"><i class="fas fa-cart-plus"></i></span>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-        <!--End of Header Section-->
-    <br>
-        <!--Start of Main Section-->   
-    <main>
-        <!--Start of Slide-Show
-                                        Shows atleast 3 images of the range of products in our online shop-->
-        <div class="slideshow-container">
-                            
-                                            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="images/macbook-new.jpg" style="width:100%">
-                <div class="text">MacBook</div>
-            </div>                    
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                    <img src="images/bags.jpg" style="width:100%">
-                <div class="text">Bags</div>
+      <nav>
+          <!--Logo-->
+          <div class="logo">
+                  <!-- <img src="images/logo.png"  alt="Logo"> -->
+                  <h4>Manila Shop</h4>
+          </div>
+          <label for="btn" class="icon">
+              <span class="menu__bars"><img src="/UI/icons/iconmonstr-menu-5.svg"></span>
+          </label>
+          <input type="checkbox" id="btn">
+          <!--Start of Navigation-Links-->
+      </nav>
+  </header>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Log In</h2>
+        <div class="form-control">
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter username.." />
+          <small>Error</small>
         </div>
-        <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                    <img src="images/iphone.jpg" style="width:100%">
-                <div class="text">Iphone</div>
+        <div class="form-control">
+          <label for="email">Email:</label>
+          <input type="text" id="email" placeholder="Enter email.." />
+          <small>Error</small>
         </div>
-                                            <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="form-control">
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter password.." />
+          <small>Error</small>
         </div>
-            <br>
-                                        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <!--End of Slide-Show-->
+        <a href="homepage.html" rel="external"><input type="button" onclick="alert('login Successful \nWelcome to Manila shop')" value="LogIn"></a>
+        <label style="color:#0c61ac;text-align:center;">Create account</label><a href="signup.html" ><input type="button" value="SignUp"></a>
 
-        <!--Start of Product Categories
-                            Shows a few Categories & Subcategories of Products on our website, with a 'see all categories' button at the end
-        <section class="categories">
-            <h2>Categories</h2>
-            <div>
-                <div class="categories__wrapper">
-                    <div class="categories__category">
-                        <a href="subcategory.html">
-                            <div class="categories__image">
-                                <figure>
-                                    <img src="images/smartphones.png" alt="Phones">
-                                </figure>
-                            </div>
-                            <div class="categories__name1">
-                                <p>Phones</p>
-                                <p>from UGX 100,000/=</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__category">
-                        <a href="subcategory.html">
-                            <div class="categories__image">
-                                <figure>
-                                    <img src="images/beauty.png" alt="Beauty">
-                                </figure>
-                            </div>
-                            <div class="categories__name2">
-                                <div>Beauty</div>
-                                <div>from UGX 50,000/=</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__category">
-                        <a href="subcategory.html">
-                            <div class="categories__image">
-                                <figure>
-                                    <img src="images/tablets.png" alt="Tablets">
-                                </figure>
-                            </div>
-                            <div class="categories__name3">
-                                <div>Tablets</div>
-                                <div>from UGX 500,000/=</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__category">
-                        <a href="subcategory.html">
-                            <div class="categories__image">
-                                <figure>
-                                    <img src="images/consoles.png" alt="Gaming Consoles">
-                                </figure>
-                            </div>
-                            <div class="categories__name4">
-                                <div>Gaming Consoles</div>
-                                <div>from UGX 500,000/=</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="categories__catalog">
-                    <a href="catalog.html">
-                        <span>see all categories</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        End of Product Categories-->
-
-            <!--Start of Our Products - 
-                            Section presents a list of items that the user can scroll through, like, comment, add to cart and any other available features-->
-        <!-- Products -->
-    <div class="products">
-        <div class="section-title">
-            <h2>Our Products</h2>
-        </div>
-        <div class="products-center"> <!-- This div is where all the products go in-->
-            <!-- single product -->
-            <!-- <article class="product">
-                <div class="img-container">
-                  <img src="./images/product-1.jpeg" alt="product-1" class="product-img">  
-                  <button class="bag-btn" data-id='1'><i class="fas fa-shopping-cart"></i>Add to bag</button>
-                </div>
-                <h3>Queen Bed</h3>
-                <h4>$200</h4>
-            </article> -->
-            <!-- end of single product -->
-        </div>
+      </form>
     </div>
-    <!-- End of product -->
-
-    <!-- Shopping Cart -->
-    <div class="cart-overlay">
-        <div class="cart">
-            <span class="close-cart"><i class="fas fa-window-close"></i></span>
-            <h2>My Cart Items</h2>
-            <div class="cart-content">
-                <!--Cart Item  -->
-                <!-- <div class="cart-item">
-                    <img src="./images/product-4.jpeg" alt="">
-                    <div>
-                        <h4>Queen Bed</h4>
-                        <h5>$99</h5>
-                        <span class="remove-item">Remove</span>
-                    </div>
-                    <div>
-                        <i class="fas fa-chevron-up"></i>
-                        <p class="item-amount">2</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>   
-                </div> -->
-                <!-- End of Cart Item -->                    
-            </div>
-            <div class="cart-footer">
-                <h3>Total Amount: $ <span class="cart-total">0 </span> </h3>
-                <button class="clear-cart banner-btn">Clear Cart</button>
-            </div>
-        </div>
-    </div>
-    <!-- End of Shopping cart -->
-            </main>
-        <!--End of Main Section-->
-
-        <!--Start of Footer Section-->
-    <footer class="footer">
-        <div class="banner">
-            <h1 class="banner-title">Orders are processed within 1 hour, or the next day if order is placed after 4:00pm</h1>
-            <a href="index.html"><button class="banner-btn">Shop Now</button></a>
-        </div>
-        <!-- Add copyright section -->
-        <h3 id="copyright">&#169 Manila Shop 2020</h3>
-    </footer>
-    <script src="scripts/index.js"></script>
-</body>
-
+  <script src="scripts/main.js"></script>
+  </body>
 </html>

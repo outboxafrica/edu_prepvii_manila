@@ -17,7 +17,10 @@ body {
     background: var(--mainWhite);
     font-family: "Lato", sans-serif;
 }
-
+li:hover{
+    background-color: rgb(236, 178, 71);
+    color: #362c36;
+}
 * {
     margin: 0;
     padding: 0;
