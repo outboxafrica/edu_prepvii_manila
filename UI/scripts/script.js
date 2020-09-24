@@ -79,6 +79,5 @@ form.addEventListener("submit", function (contentCheck) {
   checkEmail(email);
   checkPasswordsMatch(password, password2);
   alert ("Account created successfully! Click to view our products.");
-  window.location = "/edu_prepvii_manila/products.html"
   return false;
 });
