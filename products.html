@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./UI/css/products.css">
     <script src="https://kit.fontawesome.com/f034b3503b.js" crossorigin="anonymous"></script>
     <title>Edu Online Shop</title>
 </head>
@@ -117,7 +117,7 @@
                     <input type="checkbox" id="btn-9">
                     <ul>
                         <li><a href="signup.html">Create account</a></li>
-                        <li><a href="login.html">Log-in</a></li>
+                        <li><a href="login.html">Log-out</a></li>
                     </ul>
                 </li>
                 <li>
@@ -140,117 +140,12 @@
         </nav>
     </header>
         <!--End of Header Section-->
-    <br>
         <!--Start of Main Section-->   
     <main>
-        <!--Start of Slide-Show
-                                        Shows atleast 3 images of the range of products in our online shop-->
-        <div class="slideshow-container">
-                            
-                                            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="images/macbook-new.jpg" style="width:100%">
-                <div class="text">MacBook</div>
-            </div>                    
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                    <img src="images/bags.jpg" style="width:100%">
-                <div class="text">Bags</div>
-        </div>
-        <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                    <img src="images/iphone.jpg" style="width:100%">
-                <div class="text">Iphone</div>
-        </div>
-                                            <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-            <br>
-                                        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-        <!--End of Slide-Show-->
-
-        <!--Start of Product Categories
-                            Shows a few Categories & Subcategories of Products on our website, with a 'see all categories' button at the end
-        <section class="categories">
-            <h2>Categories</h2>
-            <div>
-                <div class="categories__wrapper">
-                    <div class="categories__category">
-                        <a href="subcategory.html">
-                            <div class="categories__image">
-                                <figure>
-                                    <img src="images/smartphones.png" alt="Phones">
-                                </figure>
-                            </div>
-                            <div class="categories__name1">
-                                <p>Phones</p>
-                                <p>from UGX 100,000/=</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__category">
-                        <a href="subcategory.html">
-                            <div class="categories__image">
-                                <figure>
-                                    <img src="images/beauty.png" alt="Beauty">
-                                </figure>
-                            </div>
-                            <div class="categories__name2">
-                                <div>Beauty</div>
-                                <div>from UGX 50,000/=</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__category">
-                        <a href="subcategory.html">
-                            <div class="categories__image">
-                                <figure>
-                                    <img src="images/tablets.png" alt="Tablets">
-                                </figure>
-                            </div>
-                            <div class="categories__name3">
-                                <div>Tablets</div>
-                                <div>from UGX 500,000/=</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="categories__category">
-                        <a href="subcategory.html">
-                            <div class="categories__image">
-                                <figure>
-                                    <img src="images/consoles.png" alt="Gaming Consoles">
-                                </figure>
-                            </div>
-                            <div class="categories__name4">
-                                <div>Gaming Consoles</div>
-                                <div>from UGX 500,000/=</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="categories__catalog">
-                    <a href="catalog.html">
-                        <span>see all categories</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-        End of Product Categories-->
-
             <!--Start of Our Products - 
                             Section presents a list of items that the user can scroll through, like, comment, add to cart and any other available features-->
         <!-- Products -->
     <div class="products">
-        <div class="section-title">
-            <h2>Our Products</h2>
-        </div>
         <div class="products-center"> <!-- This div is where all the products go in-->
             <!-- single product -->
             <!-- <article class="product">
@@ -290,7 +185,7 @@
             </div>
             <div class="cart-footer">
                 <h3>Total Amount: $ <span class="cart-total">0 </span> </h3>
-                <button class="clear-cart banner-btn">Clear Cart</button>
+                <button class="clear-cart banner-btn">Order Now</button>
             </div>
         </div>
     </div>
@@ -302,12 +197,26 @@
     <footer class="footer">
         <div class="banner">
             <h1 class="banner-title">Orders are processed within 1 hour, or the next day if order is placed after 4:00pm</h1>
-            <a href="index.html"><button class="banner-btn">Shop Now</button></a>
         </div>
         <!-- Add copyright section -->
         <h3 id="copyright">&#169 Manila Shop 2020</h3>
     </footer>
-    <script src="scripts/index.js"></script>
+    <!--<script src="./UI/scripts/slide_background.js"></script>
+    <script>
+        slide_background("body",
+    
+          {
+            slide: ["UI/images/bags.jpg", "UI/images/hero-bcg.jpeg", "UI/images/product-2.jpeg", "UI/images/product-4.jpeg", "UI/images/product-5.jpeg", "UI/images/product-6.jpeg", "UI/images/product-7.jpeg", "UI/images/product-8.jpeg"],
+    
+            delay: [2000, 2000, 2000, 2000, 2000]
+          }
+    
+    
+        );
+    </script> -->
+    <script src="./UI/scripts/index.js"></script>
+
+
 </body>
 
 </html>
