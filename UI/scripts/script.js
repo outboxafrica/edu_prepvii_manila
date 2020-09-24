@@ -1,6 +1,5 @@
 const form = document.getElementById("form");
-const firstName = document.getElementById("firstName");
-const lastName = document.getElementById("lastName");
+const userName = document.getElementById("userName");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
@@ -70,14 +69,15 @@ function getFieldName(input) {
 }
 
 //Event Listners
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+form.addEventListener("submit", function (contentCheck) {
+  contentCheck.preventDefault();
 
-  checkRequired([firstName, lastName, email, password, password2]);
-  checkLength(firstName, 3, 20);
-  checkLength(lastName, 3, 20);
+  checkRequired([userName, email, password, password2]);
+  checkLength(userName, 3, 20);
   checkLength(password, 6, 16);
   checkLength(password2, 6, 16);
   checkEmail(email);
   checkPasswordsMatch(password, password2);
+  alert ("Account created successfully! Click to view our products.");
+  return false;
 });

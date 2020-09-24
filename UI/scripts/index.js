@@ -1,4 +1,4 @@
-//Slide Show
+/*Slide Show
 var slideIndex = 0;
 showSlides();
 
@@ -12,7 +12,7 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
+} */
 
 //Products & Shopping Cart
 // variables
@@ -34,7 +34,7 @@ let buttonsDOM = [];
 class Products{
 async getProducts(){
         try{
-          let result = await fetch("scripts/products.json");
+          let result = await fetch("./UI/scripts/products.json");
           let data = await result.json();
           let products = data.items;
           products = products.map(item =>{
@@ -154,6 +154,7 @@ class UI{
          this.addCartItemToDOM(item)   
         })
     }
+    
     clearCart(){
         let cartItems = cart.map(item => item.id);
         // cartContent.innerHTML = '';
@@ -161,7 +162,7 @@ class UI{
         cartItems.forEach(id => this.removeItem(id));
         while(cartContent.children.length > 0){
             cartContent.removeChild(cartContent.children[0])
-        }
+        } 
         this.hideCart();
     }
     removeItem(id){
@@ -176,15 +177,17 @@ class UI{
         return buttonsDOM.find(button => button.dataset.id == id);
     }
     cartLogic(){
+        
         clearCartBtn.addEventListener('click',()=>{
-            this.clearCart();
-        });
+            alert("Thank you. Your order is being processed. Proceed To Payment & Checkout.");
+            window.location = "products.html";
+        }); 
         cartContent.addEventListener('click',event =>{
             if(event.target.classList.contains('remove-item')){
                 let removeItem = event.target;
                 let id = removeItem.dataset.id;
                 cartContent.removeChild(removeItem.parentElement.parentElement);
-               // this.removeItem(id);
+                this.removeItem(id);
             }
         })
     }

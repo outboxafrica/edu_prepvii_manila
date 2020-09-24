@@ -5,7 +5,7 @@
         "fields": {
           "title": "APPLE MACBOOK PRO 15\"",
           "price": 10.99,
-          "image": { "fields": { "file": { "url": "./images/1-medium.jpg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/1-medium.jpg" } } }
         }
       },
       {
@@ -13,7 +13,7 @@
         "fields": {
           "title": "APPLE MACBOOK 12\"",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "./images/2-medium.jpg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/2-medium.jpg" } } }
         }
       },
       {
@@ -21,7 +21,7 @@
         "fields": {
           "title": "LENOVO IDEAPAD",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "./images/3-medium.jpg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/3-medium.jpg" } } }
         }
       },
       {
@@ -29,7 +29,7 @@
         "fields": {
           "title": "ASUS ZENBOOK",
           "price": 22.99,
-          "image": { "fields": { "file": { "url": "./images/4-medium.jpg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/4-medium.jpg" } } }
         }
       },
       {
@@ -37,7 +37,7 @@
         "fields": {
           "title": "DELL XPS 15 - SILVER",
           "price": 88.99,
-          "image": { "fields": { "file": { "url": "./images/5-medium.jpg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/5-medium.jpg" } } }
         }
       },
       {
@@ -45,7 +45,7 @@
         "fields": {
           "title": "APPLE MACBOOK AIR 13\"",
           "price": 32.99,
-          "image": { "fields": { "file": { "url": "./images/6-medium.jpg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/6-medium.jpg" } } }
         }
       },
       {
@@ -53,7 +53,7 @@
         "fields": {
           "title": "DELL INSPIRON - GRAY",
           "price": 45.99,
-          "image": { "fields": { "file": { "url": "./images/7-medium.jpg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/7-medium.jpg" } } }
         }
       },
       {
@@ -61,7 +61,7 @@
         "fields": {
           "title": "LENOVO YOGA",
           "price": 33.99,
-          "image": { "fields": { "file": { "url": "./images/8-medium.jpg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/8-medium.jpg" } } }
         }
       },
       {
@@ -69,7 +69,7 @@
         "fields": {
           "title": "QUEEN PANEL BED",
           "price": 10.99,
-          "image": { "fields": { "file": { "url": "./images/product-1.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/product-1.jpeg" } } }
         }
       },
       {
@@ -77,7 +77,7 @@
         "fields": {
           "title": "KING PANEL BED",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/product-2.jpeg" } } }
         }
       },
       {
@@ -85,7 +85,7 @@
         "fields": {
           "title": "SINGLE PANEL BED",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "./images/product-3.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/product-3.jpeg" } } }
         }
       },
       {
@@ -93,7 +93,7 @@
         "fields": {
           "title": "TWIN PANEL BED",
           "price": 22.99,
-          "image": { "fields": { "file": { "url": "./images/product-4.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/product-4.jpeg" } } }
         }
       },
       {
@@ -101,7 +101,7 @@
         "fields": {
           "title": "FRIDGE",
           "price": 88.99,
-          "image": { "fields": { "file": { "url": "./images/product-5.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/product-5.jpeg" } } }
         }
       },
       {
@@ -109,7 +109,7 @@
         "fields": {
           "title": "DRESSER",
           "price": 32.99,
-          "image": { "fields": { "file": { "url": "./images/product-6.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/product-6.jpeg" } } }
         }
       },
       {
@@ -117,7 +117,7 @@
         "fields": {
           "title": "COUCH",
           "price": 45.99,
-          "image": { "fields": { "file": { "url": "./images/product-7.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/product-7.jpeg" } } }
         }
       },
       {
@@ -125,7 +125,7 @@
         "fields": {
           "title": "TABLE",
           "price": 33.99,
-          "image": { "fields": { "file": { "url": "./images/product-8.jpeg" } } }
+          "image": { "fields": { "file": { "url": "./UI/images/product-8.jpeg" } } }
         }
       }
     ]

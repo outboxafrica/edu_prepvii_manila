@@ -68,4 +68,5 @@ form.addEventListener("submit", function (e) {
   checkLength(username, 3, 20);
   checkLength(password, 6, 16);
   checkEmail(email);
+  alert ("Login successful! Click to view our products.");
 });
